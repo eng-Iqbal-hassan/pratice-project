@@ -170,6 +170,8 @@ header ul li .btn {
 }
 
 main .services {
+  display: flex;
+  align-items: center;
   position: relative;
   padding: 6.1875rem 7.6875rem 4.9375rem 9.375rem;
 }
@@ -444,8 +446,18 @@ main .partners p {
     margin-bottom: 0;
   }
 }
+main .partners .partner-listing {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 main .partners .partner-listing:not(:last-child) {
   margin-bottom: 1rem;
+}
+@media screen and (max-width: 768px) {
+  main .partners .partner-listing {
+    flex-wrap: wrap;
+  }
 }
 @media screen and (max-width: 1280px) {
   main .partners .partner-listing svg {
@@ -461,7 +473,6 @@ main .partners .partner-listing:not(:last-child) {
 }
 @media screen and (max-width: 768px) {
   main .partners .partner-listing svg {
-    flex-wrap: wrap;
     width: 10.625rem;
     height: 4.5rem;
   }

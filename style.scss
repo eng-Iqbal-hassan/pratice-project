@@ -99,6 +99,8 @@ header {
 }
 main {
     .services {
+        display: flex;
+        align-items: center;
         position: relative;
         padding: 6.1875rem 7.6875rem 4.9375rem 9.375rem;
         @media screen and (max-width:1024px) {
@@ -307,9 +309,15 @@ main {
             }
         }
         .partner-listing{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
             &:not(:last-child) {
                 margin-bottom: 1rem;
             } 
+            @media screen and (max-width: 768px) {
+                flex-wrap: wrap;
+            }
             svg {
                 @media screen and (max-width:1280px) {
                     width: 8.125rem;
@@ -320,7 +328,6 @@ main {
                     height: 3.75rem;  
                 } 
                 @media screen and (max-width:768px) {
-                    flex-wrap: wrap;
                     width: 10.625rem;
                     height: 4.5rem;
                 } 
